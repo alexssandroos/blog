@@ -1,3 +1,4 @@
 theme: jekyll-theme-architect
 title: "BI Cearence"
 breadcrumbs: true
+search: true
