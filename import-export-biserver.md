@@ -4,6 +4,7 @@ Por padrão o Pentaho não importa/exporta arquivos de plugins que podem ser adi
 Basicamente precisaremos alterar dois arquivos : 
 
 1. Edite o pentaho-solutions/system/importExport.xml procure as seguintes tags bean e adiocione os values com a extensão do arquivo desejado.
+
 ```xml 
 . . . 
 <bean id="DefaultExportHandler"
