@@ -1,5 +1,6 @@
 [Home](index) / [BI-SERVER](biserver)
 # [BI-SERVER] - Configurar importação/exportação de arquivos (like .saiku etc)
+___
 
 Por padrão o Pentaho não importa/exporta arquivos de plugins que podem ser adicionados a ele para extender suas funcionalidades(Saiku, Pivot4J, BTable etc), mas contornar essa restrição é algo extremamente simples, nesse post vou exemplificar para arquivos do Saiku mas essa modificação pode ser feita para adicionar qualquer outra bastando modificar as extensões.
 Basicamente precisaremos alterar dois arquivos : 
