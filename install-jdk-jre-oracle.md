@@ -1,4 +1,6 @@
+[Home](index) / [BI-SERVER](biserver)
 # Configuração – Instalando JDK/JRE Oracle no Ubuntu Server
+___
 Para um melhor aproveitamento do Pentaho é indicado usar o Java da Oracle, sendo assim seguem os passos para configurar um ambiente com JDK JRE redondo pronto para o Pentaho.
 
 1 – Removendo OpenJdk
