@@ -1,0 +1,2 @@
+
+#Autenticação Javascript no Pentaho
