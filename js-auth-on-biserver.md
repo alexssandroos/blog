@@ -1,5 +1,5 @@
 [Home](index) / [BI-SERVER](biserver)
-# Autenticação Javascript no Pentaho
+# Autenticação Javascript no Pentaho [under-contruction]
 ___
 Recentemente assumi o desafio de extender funcionalidades e integrar o Pentaho Server a uma aplicação Javascrip feita em [VueJS](https://vuejs.org/), como a ideia trata de uma necessidade em comum de alguns usuários esse post registra como contornei o problema e dificuldades que encontrei até a solução definitiva.
 
