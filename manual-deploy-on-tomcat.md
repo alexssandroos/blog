@@ -17,5 +17,7 @@ ___
  
  ### REFERENCIAS 
  [https://help.pentaho.com/Documentation/7.1/Installation/Manual/070_Starting_pentaho_server](https://help.pentaho.com/Documentation/7.1/Installation/Manual/070_Starting_pentaho_server)
+ 
  [https://help.pentaho.com/Documentation/7.1/Installation/Manual/020_Use_postgresql_as_repository_database](https://help.pentaho.com/Documentation/7.1/Installation/Manual/020_Use_postgresql_as_repository_database)
+ 
  [https://help.pentaho.com/Documentation/7.1/Troubleshooting](https://help.pentaho.com/Documentation/7.1/Troubleshooting)
