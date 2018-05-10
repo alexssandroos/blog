@@ -11,7 +11,11 @@ ___
  
  ### Configurar Postgres como repositorio - [doc](https://help.pentaho.com/Documentation/7.1/Installation/Manual/020_Use_postgresql_as_repository_database)
  
- ### 
+ ### Adaptar tomcat ao Pentaho
+ - Criar diretorio pentaho-server
+ - Descompactar tomcat
+ - Descompactar os arquivos data.zip e pentaho-solutions.zip
+ - Modificar o Startup Script do Tomcat
  
  
  
