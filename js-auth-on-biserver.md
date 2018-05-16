@@ -10,9 +10,9 @@ Recentemente assumi o desafio de extender funcionalidades e integrar o Pentaho S
 
 ### Passo a passo
 - É possível testar a autenticação via token antes da implementação via `curl` ultilitário cli Linux/Macos
-.. code-block::sh
+``` sh 
 $ curl -i -H "Content-type: application/x-www-form-urlencoded" -c cookies.txt -X POST http://localhost:8080/pentaho/j_spring_security_check -d "j_username=seuUsuario&j_password=suaSenha"
-
+```
 
 
 ### Deploy da aplicação
