@@ -154,7 +154,7 @@ window.VUELOG_DATABASE = {
         'en-US': 'Introdução a Trilha Pentaho ',
         'pt-BR': 'Introdução a Trilha Pentaho '
       },
-      slug: 'intro-pentaho-init',
+      slug: 'trilha-1-intro',
       category: 'trilha-pentaho-init',
       date: '2018-06-16'
     }
