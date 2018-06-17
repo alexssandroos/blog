@@ -26,9 +26,13 @@ Semanalmente as sexta-feira sera lancado um novo artigo que estará associado à
 
 #### Links 
 [O que ha de novo na versao 8](https://help.pentaho.com/Documentation/8.0/Whats_New)
+
 [O que ha de novo na versao 8.1](https://help.pentaho.com/Documentation/8.0/Whats_New)
+
 [Canal do Prof. Marcelo Brito](https://www.youtube.com/watch?v=Y4xdD2BUTEk&list=PLG_hvke1jYoQ1YFB4x3QKg0I0Qbk9--QD)
+
 [Canal do Prof. Coruja](https://www.youtube.com/channel/UC-Gvg3pUKAyYux6b8wJgQzA)
+
 
 Por fim quaisquer duvidas podem ficar a vontade de me enviar via e-mail no alexssandroos@yahoo.com.br 
 
