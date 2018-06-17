@@ -119,6 +119,13 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Pentaho'
       },
       slug: 'pentaho'
+    },
+    {
+      title: {
+        'en-US': 'Trilha Pentaho Init',
+        'pt-BR': 'Trilha Pentaho Init'
+      },
+      slug: 'trilha-pentaho-init'
     }
 
   ],
@@ -141,6 +148,16 @@ window.VUELOG_DATABASE = {
       slug: 'install-jdk-jre-oracle',
       category: 'linux',
       date: '2018-04-12'
+    },
+    {
+      title: {
+        'en-US': 'Introdução a Trilha Pentaho ',
+        'pt-BR': 'Introdução a Trilha Pentaho '
+      },
+      slug: 'intro-pentaho-init',
+      category: 'trilha-pentaho-init',
+      date: '2018-06-16'
     }
+
   ]
 }
