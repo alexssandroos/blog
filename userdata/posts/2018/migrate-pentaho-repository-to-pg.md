@@ -3,7 +3,7 @@ category: pentaho
 date: 2018-06-19
 ------------------------------------
 
-### Migração do Reposotório Pentaho(5.X,6.X,7.X) para PostgreSQL
+### Migração do Repositório Pentaho(5.X,6.X,7.X) para PostgreSQL
 ___
 
 <blockquote class="tip">
@@ -34,7 +34,7 @@ CREATE TABLE "QRTZ_DUMMY"
 ALTER TABLE "QRTZ_DUMMY" OWNER TO pentaho_user;
 ```
 
-Arquivos a serem editados seguidos do motivo: 
+#### Arquivos a serem editados seguidos do motivo: 
 
 | Arquivo | Observação |
 | :----: | -----: |
@@ -48,14 +48,28 @@ Arquivos a serem editados seguidos do motivo:
 | tomcat/webapps/pentaho/WEB-INF/web.xml | *Opcional* caso deseje desativar o Hypersonic |
 | pentaho-solutions/system/pentaho-spring-beans.xml | *Opcional* caso deseje desativar o H2 | 
 
-
 <blockquote class="tip">
   <p>
     Caso esqueça de editar algum arquivo e tenha subido o serviço do Pentaho pare-o edite os arquivos necessários e rode novamente os scripts de create.
   </p>
 </blockquote>
 
+#### 1.1 - Configurando o Quartz
+Os dados referentes a eventos como agendameto de relatórios ficam armazenados no Quartz JobsStore. 
+editar : pentaho-solutions/system/quartz/quartz.properties
+```properties
+org.quartz.jobStore.driverDelegateClass = org.quartz.impl.jdbcjobstore.PostgreSQLDelegate
+```
+
+
 #### Opcionais( Mas eu em seu lugar faria hehe :) )
+
+#### Referencias e links úteis
+
+[Artigo Kleyson Rios para Pentaho 5.4](http://kleysonrios.blogspot.com/2015/09/pentaho-54-postgresql.html)
+
+[Doc. Oficial](https://help.pentaho.com/Documentation/6.0/0F0/0K0/040/0A0)
+
 
 
 
