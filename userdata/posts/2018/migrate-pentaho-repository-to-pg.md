@@ -35,6 +35,7 @@ ALTER TABLE "QRTZ_DUMMY" OWNER TO pentaho_user;
 ```
 
 Arquivos a serem editados seguidos do motivo: 
+
 | Arquivo | Observação |
 | :----: | -----: |
 | pentaho-solutions/system/quartz/quartz.properties | Configurações do Quartz |
