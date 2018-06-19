@@ -100,20 +100,114 @@ jdbc.username=hibuser
 jdbc.password=password
 hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ```
-#### 4 - 
+#### 4 - Ajustes na JDNI padrão
   4.1 - edite: pentaho-solutions/system/simple-jndi/jdbc.properties
 ```properties
+... trecho anterior omitido ...
 
+Hibernate/type=javax.sql.DataSource
+Hibernate/driver=org.postgresql.Driver
+Hibernate/url=jdbc:postgresql://localhost:5432/hibernate
+Hibernate/user=hibuser
+Hibernate/password=password
+Quartz/type=javax.sql.DataSource
+Quartz/driver=org.postgresql.Driver
+Quartz/url=jdbc:postgresql://localhost:5432/quartz
+Quartz/user=pentaho_user
+Quartz/password=password
+
+... trecho posterior omitido ...
 ```
 <blockquote class="tip">
   <p>
-    Caso pretenda desativar o H2/Hypersonic ṕodes comentar as linhas da demo.
+    Caso pretenda desativar o H2/Hypersonic podes comentar as linhas da demo.
   </p>
 </blockquote>
 
+#### 5 - Ajustes no contexto da aplicação (Tomcat)
+  5.1 - edite : tomcat/webapps/pentaho/META-INF/context.xml
+```xml  
+... trecho anterior omitido ...
 
+  <Resource name="jdbc/Hibernate" auth="Container" type="javax.sql.DataSource"
+              factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxActive="20" maxIdle="5"
+              maxWait="10000" username="hibuser" password="password"
+              driverClassName="org.postgresql.Driver" url="jdbc:postgresql://localhost:5432/hibernate"
+              validationQuery="select 1" />
+        <Resource name="jdbc/Quartz" auth="Container" type="javax.sql.DataSource"
+              factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxActive="20" maxIdle="5"
+              maxWait="10000" username="pentaho_user" password="password"
+              driverClassName="org.postgresql.Driver" url="jdbc:postgresql://localhost:5432/quartz"
+              validationQuery="select 1"/>
+
+... trecho posterior omitido ...
+```
+
+#### 6 - Ajustes no Jackrabbit
+Essa é a configuração que requer mais atenção e tem mais trechos a serem alterados então deixei por último.
+  6.1 - edite : pentaho-solutions/system/jackrabbit/repository.xml
+```xml
+<!-- Extrutura do xml com tags numeradas a serem editadas -->
+<repository>
+ 1 - <FileSystem></FileSystem>
+ 2 - <DataStore></DataStore>
+    <Workspace>
+       3 - <FileSystem></FileSystem>
+       4 - <PersistenceManager></PersistenceManager>   
+    </Workspace>
+    <Versioning>
+       5 - <FileSystem></FileSystem>
+       6 - <PersistenceManager></PersistenceManager> 
+    </Versioning>
+    <Cluster>
+       7 - <Journal></Journal>
+    </Cluster>
+</repository>
+```
+Tomar como referencia a [Doc oficial](https://help.pentaho.com/Documentation/6.0/0F0/0K0/040/0A0)
+  
+<blockquote class="tip">
+  <p>
+    Atenção aos trechos que editar para apagar o equivalente do Jackrabbit local.
+  </p>
+</blockquote>
+ 
 
 #### Opcionais( Mas eu em seu lugar faria hehe :) )
+
+#### Desativar inicio do Hypersonic
+editar : tomcat/webapps/pentaho/WEB-INF/web.xml
+comente ou remova esse trecho : 
+```xml
+
+... trecho anterior omitido ...
+<!-- [BEGIN HSQLDB DATABASES] -->
+<context-param>
+  <param-name>hsqldb-databases</param-name>
+  <param-value>sampledata@../../data/hsqldb/sampledata,hibernate@../../data/hsqldb/hibernate,quartz@../../data/hsqldb/quartz</param-value>
+</context-param>
+<!-- [END HSQLDB DATABASES] -->
+
+... 
+<!-- [BEGIN HSQLDB STARTER] -->
+<listener>
+  <listener-class>org.pentaho.platform.web.http.context.HsqldbStartupListener</listener-class>
+</listener>
+<!-- [END HSQLDB STARTER] -->
+
+... trecho posterior omitido ...
+```
+
+#### Desativar H2
+editar : pentaho-solutions/system/pentaho-spring-beans.xml
+```xml
+
+... trecho anterior omitido ...
+<import resource="GettingStartedDB-spring.xml" /> <!-- Remove this line to unhook the Getting Started DB -->
+
+... trecho posterior omitido ...
+```
+
 
 #### Referencias e links úteis
 
