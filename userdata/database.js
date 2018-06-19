@@ -157,6 +157,15 @@ window.VUELOG_DATABASE = {
       slug: 'trilha-1-intro',
       category: 'trilha-pentaho-init',
       date: '2018-06-16'
+    },
+    {
+      title: {
+        'en-US': 'Migrando repositorio Pentaho para Postgresql ',
+        'pt-BR': 'Migrate Pentaho Repository to Postgresql'
+      },
+      slug: 'migrate-pentaho-repository-to-pg',
+      category: 'pentaho',
+      date: '2018-06-19'
     }
 
   ]
