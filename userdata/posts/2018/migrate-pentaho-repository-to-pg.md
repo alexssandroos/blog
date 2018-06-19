@@ -3,7 +3,7 @@ category: pentaho
 date: 2018-06-19
 ------------------------------------
 
-### Migração do Repositório Pentaho(5.X,6.X,7.X) para PostgreSQL
+## Migração do Repositório Pentaho(5.X,6.X,7.X) para PostgreSQL
 ___
 
 <blockquote class="tip">
@@ -34,7 +34,7 @@ CREATE TABLE "QRTZ_DUMMY"
 ALTER TABLE "QRTZ_DUMMY" OWNER TO pentaho_user;
 ```
 
-#### Arquivos a serem editados seguidos do motivo: 
+### Arquivos a serem editados seguidos do motivo: 
 
 | Arquivo | Observação |
 | :----: | -----: |
@@ -54,7 +54,7 @@ ALTER TABLE "QRTZ_DUMMY" OWNER TO pentaho_user;
   </p>
 </blockquote>
 
-#### 1 - Configurando o Quartz
+### 1 - Configurando o Quartz
 Os dados referentes a eventos como agendameto de relatórios ficam armazenados no Quartz JobsStore. 
   1.1 - editar : pentaho-solutions/system/quartz/quartz.properties
 
@@ -66,7 +66,7 @@ org.quartz.jobStore.driverDelegateClass = org.quartz.impl.jdbcjobstore.PostgreSQ
 org.quartz.dataSource.myDS.jndiURL = Quartz
 ```
 
-#### 2 - Configurando o Hibernate
+### 2 - Configurando o Hibernate
 Pentaho usa o [Hibernate](http://hibernate.org/orm/) como seu orm
   2.1 - editar : pentaho-solutions/system/hibernate/hibernate-settings.xml
 
@@ -90,7 +90,7 @@ Pentaho usa o [Hibernate](http://hibernate.org/orm/) como seu orm
     <mapping resource="hibernate/postgresql.hbm.xml" />
     ... trecho posterior omitido ...
 ```
-#### 3 - Ajustes Spring Security
+### 3 - Ajustes Spring Security
   3.1 edit : pentaho-solutions/system/applicationContext-spring-security-hibernate.properties
 
 ```properties
@@ -100,7 +100,7 @@ jdbc.username=hibuser
 jdbc.password=password
 hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ```
-#### 4 - Ajustes na JDNI padrão
+### 4 - Ajustes na JDNI padrão
   4.1 - edite: pentaho-solutions/system/simple-jndi/jdbc.properties
 ```properties
 ... trecho anterior omitido ...
@@ -124,7 +124,7 @@ Quartz/password=password
   </p>
 </blockquote>
 
-#### 5 - Ajustes no contexto da aplicação (Tomcat)
+### 5 - Ajustes no contexto da aplicação (Tomcat)
   5.1 - edite : tomcat/webapps/pentaho/META-INF/context.xml
 ```xml  
 ... trecho anterior omitido ...
@@ -143,7 +143,7 @@ Quartz/password=password
 ... trecho posterior omitido ...
 ```
 
-#### 6 - Ajustes no Jackrabbit
+### 6 - Ajustes no Jackrabbit
 Essa é a configuração que requer mais atenção e tem mais trechos a serem alterados então deixei por último.
   6.1 - edite : pentaho-solutions/system/jackrabbit/repository.xml
 ```xml
@@ -173,9 +173,10 @@ Tomar como referencia a [Doc oficial](https://help.pentaho.com/Documentation/6.0
 </blockquote>
  
 
-#### Opcionais( Mas eu em seu lugar faria hehe :) )
+### Opcionais( Mas eu em seu lugar faria hehe :) )
 
 #### Desativar inicio do Hypersonic
+
 editar : tomcat/webapps/pentaho/WEB-INF/web.xml
 comente ou remova esse trecho : 
 ```xml
@@ -199,6 +200,7 @@ comente ou remova esse trecho :
 ```
 
 #### Desativar H2
+
 editar : pentaho-solutions/system/pentaho-spring-beans.xml
 ```xml
 
