@@ -8,7 +8,7 @@ ___
 
 Olá pessoal! ;) Sejam muito bem-vindos ao meu blog e mais especificamente a essa trilha de aprendizado.
 
-Bom, quando comecei na área de Business Intelligence tive uma série de dificuldades, primeiro era o cara do negócio (Iniciei minha faculdade em TI após entregar o primeiro projeto) e em segundo lugar a quantidade de material em português era bem escasso, pouco tempo depois que comecei(pra minha sorte) foi colocado no Youtube pelo [Caio Fábio](https://www.youtube.com/watch?v=bKYLFrEXbrM) e pelo [Marcelo Brito](https://www.youtube.com/playlist?list=PLG_hvke1jYoQ1YFB4x3QKg0I0Qbk9--QD) conteúdo de muita qualidade que me ajudou demais no começo. Mas o que acontece hoje é que a arquitetura do Pentaho mudou bastante e esse material está obsoleto em algumas partes. 
+Bom, quando comecei na área de Business Intelligence tive uma série de dificuldades, primeiro era o cara do negócio (Iniciei minha faculdade em TI após entregar o primeiro projeto) e em segundo lugar a quantidade de material em português era bem escasso, pouco tempo depois que comecei(pra minha sorte) foi colocado no Youtube pelo [Caio Moreno](https://www.youtube.com/watch?v=bKYLFrEXbrM) e pelo [Marcelo Brito](https://www.youtube.com/playlist?list=PLG_hvke1jYoQ1YFB4x3QKg0I0Qbk9--QD) conteúdo de muita qualidade que me ajudou demais no começo. Mas o que acontece hoje é que a arquitetura do Pentaho mudou bastante e esse material está obsoleto em algumas partes. 
 
 Nessa trilha contruiremos um DataMart com Pentaho/Vantara, iniciando na etapa de Extração Transformação e Carga(ETL), seguida pela Modelagem dimensional até chegar no front-end do projeto com Relatórios, OLAP e Dashboards.
 
