@@ -17,6 +17,8 @@ Hitachi Vantara/Pentaho trata-se de uma suite para projetos de Business Intellig
 ![Arquitetura Pentaho](http://bit.ly/trilha-1-overview-prepare-img01)
 
 
+Das ferramentas que compoem essa suite podemos citar : 
+1.
 
 ### PREPARACAO DO AMBIENTE 
 
@@ -64,14 +66,28 @@ Até a versão 7.X cada ferramenta da suite Pentaho ficava em um diretorio espec
 Como SGBD usaremos o PostgreSQL em sua versão 9.5, navegue até a pasta `bin` do Postgres via CLI e execute os comandos : 
 Criar Banco 
 
-```shell
+```bash
 $ createdb -U postgres --lc-collate=C --lc-ctype=C -E LATIN1 -T template0 ERPDemo
 ```
 
 Restaurar o Backup
 
-```shell
+```bash
 $ psql -U postgres ERPDemo <(local-do-arquivo)\ERPDemo.bkp
+```
+
+A extrutura de arquivos que sugiro e uso é a seguinte : 
+
+```bash
+/
+└── pentaho/
+    ├── pentaho-server/
+    └── design-tools/
+       ├── data-integration
+       ├── report-design
+       ├── metadata-editor
+       └── schema-workbench
+
 ```
 
 
