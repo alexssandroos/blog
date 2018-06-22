@@ -68,6 +68,7 @@ org.quartz.dataSource.myDS.jndiURL = Quartz
 
 ### 2 - Configurando o Hibernate
 Pentaho usa o [Hibernate](http://hibernate.org/orm/) como seu orm
+
   2.1 - editar : pentaho-solutions/system/hibernate/hibernate-settings.xml
 
 ```xml
