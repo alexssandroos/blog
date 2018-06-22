@@ -8,11 +8,21 @@ ___
 
 ### INTRODUÇÃO
 
+Nesse post vamos conhecer um pouco do Pentaho e deixar nosso ambiente preparado para trabalhamos. 
+
 ### ARQUITETURA PENTAHO
+
+Hitachi Vantara/Pentaho trata-se de uma suite para projetos de Business Intelligence/Big Data/Data Science ponta-a-ponta, possui soluções/ferramentas para atender as necessidades desde a retirada de informações até a exibição em forma de relatórios , modelos estátisticos, Dashboards etc. Desenvolvido em Java é extremamente customizável e extensível
+
+![Arquitetura Pentaho](http://bit.ly/trilha-1-overview-prepare-img01)
+
+
 
 ### PREPARACAO DO AMBIENTE 
 
-- JDK 8 ORACLE
+A preparação do ambiente para trabalhar com o Pentaho é bem simples, basicamentes precisas de : 
+
+- JDK 8 ORACLE 
 
 - VARIAVEL de AMBIENTE 
 
@@ -26,9 +36,15 @@ De todo modo esses dois artigos podem lhe orientar melhor como proceder nas conf
 
 > Para esse projeto usarei somente a variável `PENTAHO_JAVA_HOME` 
 
+> Caso use Linux recomendo instalar a lib `libwebkitgtk-1.0`
+
+> No Windows recomendo atualizar o browser Microsoft Internet Explorer 11+
+
+
 ### BAIXANDO AS FERRAMENTAS 
 
-Até a versão 7.X cada ferramenta da suite Pentaho ficava em um diretorio específico no dominio https://sourceforge.net/projects/pentaho/files apartir da versão 8.X as ferramentas estão dentro da pasta específica da versão dentro do mesmo domínio. Como comentei no [post anterior]() usarei nessa trilha a versão 7.1 da suite, desta usaremos : 
+Até a versão 7.X cada ferramenta da suite Pentaho ficava em um diretorio específico no dominio https://sourceforge.net/projects/pentaho/files apartir da versão 8.X as ferramentas estão dentro da pasta específica da versão dentro do mesmo domínio. Como comentei no [post anterior](#/blog/trilha-pentaho-init/2018/trilha-1-intro) usarei nessa trilha a versão 7.1 da suite, desta instalaremos : 
+
 
 [Business Analytics Server](https://sourceforge.net/projects/pentaho/files/Business%20Intelligence%20Server/7.1/pentaho-server-ce-7.1.0.0-12.zip/download)
 
@@ -48,14 +64,14 @@ Até a versão 7.X cada ferramenta da suite Pentaho ficava em um diretorio espec
 Como SGBD usaremos o PostgreSQL em sua versão 9.5, navegue até a pasta `bin` do Postgres via CLI e execute os comandos : 
 Criar Banco 
 
-```sh
-createdb -U postgres --lc-collate=C --lc-ctype=C -E LATIN1 -T template0 ERPDemo
+```shell
+$ createdb -U postgres --lc-collate=C --lc-ctype=C -E LATIN1 -T template0 ERPDemo
 ```
 
 Restaurar o Backup
 
-```sh
-psql -U postgres ERPDemo <(local-do-arquivo)\ERPDemo.bkp
+```shell
+$ psql -U postgres ERPDemo <(local-do-arquivo)\ERPDemo.bkp
 ```
 
 
@@ -65,11 +81,7 @@ psql -U postgres ERPDemo <(local-do-arquivo)\ERPDemo.bkp
 
 [Doc - Preparando o ambiente Linux](https://help.pentaho.com/Documentation/7.1/Installation/Archive/015_Prepare_linux_environment)
 
+[Doc - Referencia dos Componentes](https://help.pentaho.com/Documentation/7.1/0D0/160/000)
 
-
-
-
-
-
-
+[Instalação JDK/JRE Linux](#/blog/linux/2018/install-jdk-jre-oracle)
 
