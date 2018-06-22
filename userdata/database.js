@@ -151,8 +151,8 @@ window.VUELOG_DATABASE = {
     },
     {
       title: {
-        'en-US': 'Introdução a Trilha Pentaho ',
-        'pt-BR': 'Introdução a Trilha Pentaho '
+        'en-US': 'Pentaho Init - Introdução ',
+        'pt-BR': 'Pentaho Init - Introdução '
       },
       slug: 'trilha-1-intro',
       category: 'trilha-pentaho-init',
@@ -166,6 +166,15 @@ window.VUELOG_DATABASE = {
       slug: 'migrate-pentaho-repository-to-pg',
       category: 'pentaho',
       date: '2018-06-19'
+    },
+    {
+      title: {
+        'en-US': 'Pentaho Init - Preparando o ambiente ',
+        'pt-BR': 'Pentaho Init - Preparando o ambiente '
+      },
+      slug: 'trilha-1-overview-prepare',
+      category: 'trilha-pentaho-init',
+      date: '2018-06-21'
     }
 
   ]
