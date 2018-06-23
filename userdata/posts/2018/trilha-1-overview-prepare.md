@@ -14,11 +14,30 @@ Nesse post vamos conhecer um pouco do Pentaho e deixar nosso ambiente preparado 
 
 Hitachi Vantara/Pentaho trata-se de uma suite para projetos de Business Intelligence/Big Data/Data Science ponta-a-ponta, possui soluções/ferramentas para atender as necessidades desde a retirada de informações até a exibição em forma de relatórios , modelos estátisticos, Dashboards etc. Desenvolvido em Java é extremamente customizável e extensível
 
-![Arquitetura Pentaho](http://bit.ly/trilha-1-overview-prepare-img01)
+![Arquitetura Pentaho](./userdata/images/trilha-1-01.jpg)
 
 
 Das ferramentas que compoem essa suite podemos citar : 
-1.
+
++ **Pentaho Data Integration(Aka Kettle)** : Na minha humilde opnião a melhor ferramenta da suite, trata-se de uma ferramenta de Extração transformação e carga ou ETL para os mais intimos, possui componentes de conexão para arquivos(txt, csv, xls, xml, etc), para bancos de dados relacionais(PG, M$SQLSERVER, MYSQL), bancos Nosql (Hadoop, Mongo, Cassandra etc.), webservices e por ai vai. É bem intuitiva e poderosa, já preparada para Big Data e Ciencia de dados, pode ter funcionalidades estendidas via plugin ou interfaces de programação.
+
+![Arquitetura Pentaho](./userdata/images/trilha-1-03.jpg)
+
++ **Pentaho Business Analytics Server** : Trata do front-end da suite, onde são exibidas aos usuários os relatórios, acesso as visões analiticas(OLAP), Dashboards, também é extremamente customizável e com funcionalidades extendidas por plugins. 
+
+![Arquitetura Pentaho](./userdata/images/trilha-1-04.jpg)
+
++ **Pentaho Schema Workbench(Aka Mondrian)** : De maneira resumida é a ferramenta da suite que usamos para modelar o cubo OLAP , mapear e definir as como serao exibidas as dimensoes e fatos bem como preestabelecer rebras de acesso(Roles).
+
+![Arquitetura Pentaho](./userdata/images/trilha-1-06.jpg)
+
++ **Pentaho Report Design** :  Como o próprio nome já sugere essa ferrameta é responsavel pala criação de relatórios, lembra um pouco o Cristal Report. 
+
+![Arquitetura Pentaho](./userdata/images/trilha-1-05.jpg)
+
+
+
+
 
 ### PREPARACAO DO AMBIENTE 
 
@@ -28,7 +47,7 @@ A preparação do ambiente para trabalhar com o Pentaho é bem simples, basicame
 
 - VARIAVEL de AMBIENTE 
 
-Os scripts de inicio checam a existencia das variaveis `PENTAHO_JAVA_HOME` seguidas de `JAVA_HOME` E `JRE_HOME` e em ultimo caso não havendo as variáveis de ambiente ele executa com o launcher java.
+Os s de inicio checam a existencia das variaveis `PENTAHO_JAVA_HOME` seguidas de `JAVA_HOME` E `JRE_HOME` e em ultimo caso não havendo as variáveis de ambiente ele executa com o launcher java.
 Em resumo caso use Windows basta ir em Configurações avançadas do Sistema e na aba Avançado definir as variaveis apontando para jdk e jre. Já no Linux/Unix podes configurá-las no `/etc/profile` para todos os usuários ou no `~/.bashrc` para seu usuário específico.
 De todo modo esses dois artigos podem lhe orientar melhor como proceder nas configurações relacionadas a essa etapa : 
 
