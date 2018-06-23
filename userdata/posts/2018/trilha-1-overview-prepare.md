@@ -25,18 +25,22 @@ Das ferramentas que compoem essa suite podemos citar :
 
 + **Pentaho Business Analytics Server** : Trata do front-end da suite, onde são exibidas aos usuários os relatórios, acesso as visões analiticas(OLAP), Dashboards, também é extremamente customizável e com funcionalidades extendidas por plugins. 
 
-![Arquitetura Pentaho](./userdata/images/trilha-1-04.jpg)
+![Imagem BA Server 7](./userdata/images/trilha-1-04.jpg)
 
 + **Pentaho Schema Workbench(Aka Mondrian)** : De maneira resumida é a ferramenta da suite que usamos para modelar o cubo OLAP , mapear e definir as como serao exibidas as dimensoes e fatos bem como preestabelecer rebras de acesso(Roles).
 
-![Arquitetura Pentaho](./userdata/images/trilha-1-06.jpg)
+![Imagem Schema Workbench](./userdata/images/trilha-1-06.jpg)
 
 + **Pentaho Report Design** :  Como o próprio nome já sugere essa ferrameta é responsavel pala criação de relatórios, lembra um pouco o Cristal Report. 
 
-![Arquitetura Pentaho](./userdata/images/trilha-1-05.jpg)
+![Imagem Report Design](./userdata/images/trilha-1-05.jpg)
+
++ **Pentaho Metadata Editor** :  Ferramenta responsável pela criação de Metamodelos lógicos baseados na extrutura fisica do relacional, feito isso o usuário final poderá criar relatórios dinâmicos seguindo essa extrutura. 
+
+![Imagem Metadata Editor](./userdata/images/trilha-1-07.jpg)
 
 
-
++ **Dentre outras** dentro da suite também temos soluções para Mineração de dados e aprendizado de maquina com [Pentaho Data Mining, aka Weka](https://wiki.pentaho.com/display/DATAMINING/Pentaho+Data+Mining+Community+Documentation), soluções para agregações de tabelas com [Pentaho Agreggator Design](https://help.pentaho.com/Documentation/7.1/0N0/010/000), e um mar de plugins e extensões que podem ser acopladas extendendo funcionalidades a suite. 
 
 
 ### PREPARACAO DO AMBIENTE 
