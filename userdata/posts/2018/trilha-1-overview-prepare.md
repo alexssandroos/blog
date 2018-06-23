@@ -122,5 +122,7 @@ A extrutura de arquivos que sugiro e uso é a seguinte :
 
 [Doc - Referencia dos Componentes](https://help.pentaho.com/Documentation/7.1/0D0/160/000)
 
+[Doc - Matriz versão 7.x](https://wiki.pentaho.com/display/PEOpen/Pentaho+Release+Product+Version+Matrix+7.X)
+
 [Instalação JDK/JRE Linux](#/blog/linux/2018/install-jdk-jre-oracle)
 
