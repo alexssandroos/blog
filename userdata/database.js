@@ -38,7 +38,7 @@ window.VUELOG_DATABASE = {
     postsCount: 3,
 
     // Fill in the shortname to integrate Disqus with your blog.
-    disqusShortname: 'alexssandroos',
+    disqusShortname: 'https://disqus.com/by/alexssandroos/',
 
     // Fill in the uid to integrate LiveRe with your blog.
     livereUid: '',
