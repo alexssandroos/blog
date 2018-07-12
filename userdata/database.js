@@ -175,6 +175,15 @@ window.VUELOG_DATABASE = {
       slug: 'trilha-1-overview-prepare',
       category: 'trilha-pentaho-init',
       date: '2018-06-21'
+    },
+    {
+      title: {
+        'en-US': 'Implementando SCD tipo 2 no Pentaho Data Integration ',
+        'pt-BR': ' Implementando SCD tipo 2 no Pentaho Data Integration '
+      },
+      slug: 'scd2-on-pdi',
+      category: 'pentaho',
+      date: '2018-07-12'
     }
 
   ]
