@@ -185,7 +185,7 @@ window.VUELOG_DATABASE = {
       category: 'pentaho',
       date: '2018-07-12'
     },
-        {
+    {
       title: {
         'en-US': 'Guia de sobrevivencia MDX I ',
         'pt-BR': ' Guia de sobrevivencia MDX I '
