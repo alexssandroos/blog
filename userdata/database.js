@@ -192,7 +192,7 @@ window.VUELOG_DATABASE = {
       },
       slug: 'survival-mdx1',
       category: 'pentaho',
-      date: '2018-07-12'
+      date: '2018-07-17'
     }
 
   ]
