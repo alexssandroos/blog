@@ -69,7 +69,6 @@ FROM [SteelWheelsSales]
 Retorna os 'Irmãos' do Membro exibido a direita e a esquerda respectivamente, recebe o parametro da quantidade de membros que deseja 'pular'.
 
 ```sql
-**/
 WITH
 SET [~ROWS] AS
 {[Markets].[Country].[Australia].Lead(2),
@@ -78,7 +77,6 @@ SELECT
 NON EMPTY {[Measures].[Quantity]} ON COLUMNS,
 NON EMPTY [~ROWS] ON ROWS
 FROM [SteelWheelsSales]
-/**
 ```
 
 ### Entendendo o Cross Join
