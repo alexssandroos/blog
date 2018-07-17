@@ -16,7 +16,7 @@ Retorna os Membros de uma hierarquia ou level
 ```sql
 WITH
 SET [~ROWS] AS
-{{[Markets].[Territory].Members}}
+{ {[Markets].[Territory].Members}}
 SELECT
 NON EMPTY {[Measures].[Quantity]} ON COLUMNS,
 NON EMPTY [~ROWS] ON ROWS
@@ -30,7 +30,7 @@ Retorna os filhos partindo de um determinado level
 ```sql
 WITH
 SET [~ROWS] AS
-{{[Markets].[Territory].Members},{[Markets].[Territory].&[APAC].Children}}
+{ {[Markets].[Territory].Members},{[Markets].[Territory].&[APAC].Children}}
 SELECT
 NON EMPTY {[Measures].[Quantity]} ON COLUMNS,
 NON EMPTY [~ROWS] ON ROWS
@@ -43,7 +43,7 @@ Retorna os pais partindo de um determinado Membro.
 ```sql
 WITH
 SET [~ROWS] AS
-{{[Markets].[Country].[Australia].Parent}}
+{ {[Markets].[Country].[Australia].Parent}}
 SELECT
 NON EMPTY {[Measures].[Quantity]} ON COLUMNS,
 NON EMPTY [~ROWS] ON ROWS
