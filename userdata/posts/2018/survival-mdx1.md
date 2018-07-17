@@ -65,7 +65,7 @@ NON EMPTY [~ROWS2] ON ROWS
 FROM [SteelWheelsSales]
 ```
 
-5. Lead and Lag -
+5. ***Lead and Lag***
 Retorna os 'Irmãos' do Membro exibido a direita e a esquerda respectivamente, recebe o parametro da quantidade de membros que deseja 'pular'.
 
 ```sql
