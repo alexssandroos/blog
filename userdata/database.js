@@ -184,6 +184,15 @@ window.VUELOG_DATABASE = {
       slug: 'scd2-on-pdi',
       category: 'pentaho',
       date: '2018-07-12'
+    },
+        {
+      title: {
+        'en-US': 'Guia de sobrevivencia MDX I ',
+        'pt-BR': ' Guia de sobrevivencia MDX I '
+      },
+      slug: 'survival-mdx1',
+      category: 'pentaho',
+      date: '2018-07-12'
     }
 
   ]
