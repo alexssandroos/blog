@@ -1,3 +1,8 @@
+title: Sobrevivencia com MDX I
+category: pentaho
+date: 2018-07-17
+------------------------------------
+
 ## Guia de Sobrevivencia MDX - Dicas e Truques I
 
 > Para esse artigo estou a usar a base demo `Steel Whell Sales`que vem por padrao no Pentaho BA Server
