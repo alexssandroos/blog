@@ -19,7 +19,7 @@ Nesse exemplo simularei o input de uma tabela de `Clientes` com a seguinte extru
 
 Em seguida usarei o step [Get System Info](https://wiki.pentaho.com/display/EAI/Get+System+Info) para registrar na dimensão o horario em que foi atualizado o registro (isso é opcional mas é interessante em alguns casos para fins de auditoria e controle),
 
-![imagem-step-get-system-info](http://link.com/image.jpg)
+![imagem-step-get-system-info](https://ucb74a088dcc7e7c6f0591444821.previews.dropboxusercontent.com/p/thumb/AAKq2klHuD80j6l84x9-sBemVEOlVdtg-TVQpU7RQSCmdaPO-CcahKssUkWvVdMzgnNmemFW6I_DHM0bUOJW2MuAGogLvljhPC3T3rrCEgdZW7Ix50ljH9oXWiykxcx_tjbqr5tu7TgdMjM6gJSR2i7sPGlANj0zcUgvAAn6Q1hg0kSMPB85WseMf-GnmE1ZrqRrnrGm_zOyj3vYzPvo3DJ6hGjLF4BCQajtnjysdbiZFg/p.png?size=1280x960&size_mode=3)
 
 No PDI o step que tem a responsabilidade de fazer essa carga é o [Dimension Lookup/Update](https://wiki.pentaho.com/display/EAI/Dimension+Lookup-Update), basicamente para que funcione precisamos ter na dimensão que será implementada o SCD2 os seguintes campos criados : 
 
