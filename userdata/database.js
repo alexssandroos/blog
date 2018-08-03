@@ -190,7 +190,7 @@ window.VUELOG_DATABASE = {
         'en-US': 'Guia de sobrevivencia MDX I',
         'pt-BR': 'Guia de sobrevivencia MDX I'
       },
-      slug: 'survival-mdx1',
+      slug: 'survival-1-mdx',
       category: 'pentaho',
       date: '2018-07-17'
     }
