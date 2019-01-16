@@ -193,7 +193,16 @@ window.VUELOG_DATABASE = {
       slug: 'survival-1-mdx',
       category: 'pentaho',
       date: '2018-07-17'
-    }
+    },
+    {
+      title: {
+        'en-US': 'Pentaho Guide',
+        'pt-BR': 'Gua Pentaho'
+      },
+      slug: 'guia-pentaho',
+      category: 'pentaho',
+      date: '2019-01-16'
+}
 
   ]
 }
