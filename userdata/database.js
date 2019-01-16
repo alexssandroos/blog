@@ -197,12 +197,12 @@ window.VUELOG_DATABASE = {
     {
       title: {
         'en-US': 'Pentaho Guide',
-        'pt-BR': 'Gua Pentaho'
+        'pt-BR': 'Guia Pentaho'
       },
       slug: 'guia-pentaho',
       category: 'pentaho',
       date: '2019-01-16'
-}
+    } 
 
   ]
 }
