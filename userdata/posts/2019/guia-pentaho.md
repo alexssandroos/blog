@@ -16,9 +16,9 @@ date: 2019-01-16
 ### Empresas que oferecem treinamentos 
 
 Empresa | Modalidades 
---- | ---
-[asdsa](sadsadsa) | Presencial/EAD
-[asdsa](sadsadsa) | Presencial/EAD
+--- | --- 
+[Udemy](sadsadsa) | EAD 
+[asdsa](sadsadsa) | Presencial/EAD 
 
 Considerações finais
 Esse artigo estará em constante mudança em caso de sugestões podes mandar um Pull Request es muito bem vindo :)
