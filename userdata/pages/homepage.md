@@ -3,6 +3,6 @@ title: Home
 
 <!-- pt-BR:+ -->
 
-### BI CEARENCE
+### O Entusiasta
 
 <!-- pt-BR:- -->
