@@ -14,16 +14,30 @@ date: 2019-01-16
 ### Blogs
 
 - **Português**
- -[]()
- -[]()
- -[]()
+ -[Oncase](http://blog.oncase.com.br/)
+ -[GeekBI](https://geekbi.wordpress.com/)
+ -[OpenIN](https://openin.com.br/blog/)
+ -[Ambiente Livre](http://blogs.ambientelivre.com.br)
 
 - **Inglês**
- -[]()
- -[]()
- -[]()
+ -[Diethard Steiner](http://diethardsteiner.github.io/list.html)
+ -[Pedro Alves](http://pedroalves-bi.blogspot.com/)
+ -[PentahoBI Suite](http://pentaho-bi-suite.blogspot.com/)
+ -[Smile](http://blog.smile.fr/Pentaho)
+ -[Medium posts](https://medium.com/search?q=pentaho)
+ -[KnowBI](http://blog.know.bi/tag/pentaho-data-integration)
+ -[ItNovum](https://it-novum.com/blog/category/business-intelligence)
+ -[Roland Bouman](http://rpbouman.blogspot.com/)
 
 ### Canais Youtube
+
+**em construção...**
+
+### Livros
+- [Pentaho Kettle Solutions: Building Open Source ETL Solutions with Pentaho Data Integration](https://www.wiley.com/en-us/Pentaho+Kettle+Solutions%3A+Building+Open+Source+ETL+Solutions+with+Pentaho+Data+Integration-p-9780470947524)
+- [PacktPub Books](https://search.packtpub.com/?query=pentaho&refinementList%5Breleased%5D%5B0%5D=Available)
+- [Pentaho na pratica PT](https://www.amazon.com.br/Pentaho-na-Pr%C3%A1tica-Segunda-Edi%C3%A7%C3%A3o-ebook/dp/B00CEQFDU0/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=pentaho&qid=1549126066&sr=8-1)
+
 
 ### Empresas que oferecem treinamentos 
 
