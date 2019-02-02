@@ -15,21 +15,21 @@ date: 2019-01-16
 
 - **Português**
 
- -[Oncase](http://blog.oncase.com.br/)
- -[GeekBI](https://geekbi.wordpress.com/)
- -[OpenIN](https://openin.com.br/blog/)
- -[Ambiente Livre](http://blogs.ambientelivre.com.br)
+  - [Oncase](http://blog.oncase.com.br/)
+  - [GeekBI](https://geekbi.wordpress.com/)
+  - [OpenIN](https://openin.com.br/blog/)
+  - [Ambiente Livre](http://blogs.ambientelivre.com.br)
 
 - **Inglês**
 
- -[Diethard Steiner](http://diethardsteiner.github.io/list.html)
- -[Pedro Alves](http://pedroalves-bi.blogspot.com/)
- -[PentahoBI Suite](http://pentaho-bi-suite.blogspot.com/)
- -[Smile](http://blog.smile.fr/Pentaho)
- -[Medium posts](https://medium.com/search?q=pentaho)
- -[KnowBI](http://blog.know.bi/tag/pentaho-data-integration)
- -[ItNovum](https://it-novum.com/blog/category/business-intelligence)
- -[Roland Bouman](http://rpbouman.blogspot.com/)
+  - [Diethard Steiner](http://diethardsteiner.github.io/list.html)
+  - [Pedro Alves](http://pedroalves-bi.blogspot.com/)
+  - [PentahoBI Suite](http://pentaho-bi-suite.blogspot.com/)
+  - [Smile](http://blog.smile.fr/Pentaho)
+  - [Medium posts](https://medium.com/search?q=pentaho)
+  - [KnowBI](http://blog.know.bi/tag/pentaho-data-integration)
+  - [ItNovum](https://it-novum.com/blog/category/business-intelligence)
+  - [Roland Bouman](http://rpbouman.blogspot.com/)
 
 
 ### Canais Youtube
