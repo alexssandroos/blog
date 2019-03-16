@@ -202,6 +202,15 @@ window.VUELOG_DATABASE = {
       slug: 'guia-pentaho',
       category: 'pentaho',
       date: '2019-01-16'
+    } ,
+    {
+      title: {
+        'en-US': 'Enable CORS on Pentaho',
+        'pt-BR': 'Habilitar Pentaho Server para aceitar CORS'
+      },
+      slug: 'enable-cors',
+      category: 'pentaho',
+      date: '2019-03-16'
     } 
 
   ]

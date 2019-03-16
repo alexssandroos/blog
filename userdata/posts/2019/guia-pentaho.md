@@ -34,7 +34,9 @@ date: 2019-01-16
 
 ### Canais Youtube
 
-**em construção...**
+- [Curso Pentaho Prof Marcelo](https://www.youtube.com/watch?v=Y4xdD2BUTEk&list=PLG_hvke1jYoQ1YFB4x3QKg0I0Qbk9--QD)
+- [Edureka - en](https://www.youtube.com/watch?v=nYI7A9giFzE&list=PL9ooVrP1hQOGYQ3pxPIhGim67lOR0qP_6)
+- [BI Dimensions - en](https://www.youtube.com/user/BIDimensions/videos)
 
 ### Livros
 - [Pentaho Kettle Solutions: Building Open Source ETL Solutions with Pentaho Data Integration](https://www.wiley.com/en-us/Pentaho+Kettle+Solutions%3A+Building+Open+Source+ETL+Solutions+with+Pentaho+Data+Integration-p-9780470947524)
@@ -51,6 +53,7 @@ Empresa | Modalidades
 [OpenIN](https://openin.com.br/) | Presencial/EAD 
 [4Linux](https://www.4linux.com.br/curso/business-intelligence-com-pentaho) | EAD
 [JEBS](http://www.jebsweb.com.br) | Presencial/EAD
+[Udemy](https://www.udemy.com/courses/search/?src=ukw&q=pentaho) | EAD
 
 ### Considerações finais
 Esse artigo estará em constante mudança em caso de sugestões podes mandar um Pull Request es muito bem vindo :)
