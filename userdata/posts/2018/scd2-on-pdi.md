@@ -60,7 +60,7 @@ Na aba `fields` devemos definir os campos e qual estratégia será usada para ca
 
 O resultado é uma tabela versionado da seguinte maneira : 
 
-![field config](./userdata/images/scd2-on-final-table-view.png)
+![field config](./userdata/images/scd2-on-pdi-final-table-view.png)
 
 O exemplo desse artigo pode ser encontrado aqui : 
 
