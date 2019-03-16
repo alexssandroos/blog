@@ -19,7 +19,7 @@ Nesse exemplo simularei o input de uma tabela de `Clientes` com a seguinte extru
 
 Em seguida usarei o step [Get System Info](https://wiki.pentaho.com/display/EAI/Get+System+Info) para registrar na dimensão o horario em que foi atualizado o registro (isso é opcional mas é interessante em alguns casos para fins de auditoria e controle),
 
-![imagem-step-get-system-info](https://ucb74a088dcc7e7c6f0591444821.previews.dropboxusercontent.com/p/thumb/AAKq2klHuD80j6l84x9-sBemVEOlVdtg-TVQpU7RQSCmdaPO-CcahKssUkWvVdMzgnNmemFW6I_DHM0bUOJW2MuAGogLvljhPC3T3rrCEgdZW7Ix50ljH9oXWiykxcx_tjbqr5tu7TgdMjM6gJSR2i7sPGlANj0zcUgvAAn6Q1hg0kSMPB85WseMf-GnmE1ZrqRrnrGm_zOyj3vYzPvo3DJ6hGjLF4BCQajtnjysdbiZFg/p.png?size=1280x960&size_mode=3)
+![Get System Info](./userdata/images/scd2-on-pdi-gsi.png)
 
 No PDI o step que tem a responsabilidade de fazer essa carga é o [Dimension Lookup/Update](https://wiki.pentaho.com/display/EAI/Dimension+Lookup-Update), basicamente para que funcione precisamos ter na dimensão que será implementada o SCD2 os seguintes campos criados : 
 
@@ -52,11 +52,15 @@ CREATE TABLE "public".dim_customers
 
 Na aba `key` devemos definir a(s) chave(s) de negócio da tabela.
 
-![img_config1](https://uc41dad164f83059e9610adeb248.previews.dropboxusercontent.com/p/thumb/AAIK2_7RkC8GAkiNpNA6yDYkSk64c3BIczbfbQLB6_44IsZTONztOAxZ9neUmA3MNuRmWCggw0-chSoZQq8MlcVh4iB3CFqsPBRVhfm8c2Y-Y0Rx_GnWrBtA5tjoCm5i2XsQls7Iz44gcWpuVM66N250eWqRPIrh-DHVq5HcfHR5X5HmyyKIr8u15XX51-EQFvT6LTShD1Nly2L25t-rG8HLGmE6z6e-lqANtI6aFOrGwA/p.png?)
+![key config](./userdata/images/scd2-on-pdi-dlu-1.png)
 
 Na aba `fields` devemos definir os campos e qual estratégia será usada para cada um, update alterará o registro e insert irá inserir na dimensão uma nova versão do registro, seguindo o que definimos anteriormente para nosso exemplo o resultado será esse : 
 
-![img_config2](https://uc2fa62b11bfe5dfe010dccba9a7.previews.dropboxusercontent.com/p/thumb/AAI6ZlrxKZEppiistv2elYyMvQlAui0I9p4qg7JqRGWxIpP-v3Bccq7CAAChIPG8b9UU7CJFtuTPpWE8MHpLtuV9gKVFfdLkqVC8DMpoPJ6Z0VTQQ2GM7mVBk3liTl7MN8UcwKvqIDGw9bJycGXfvXzKx_U72ittdRvhKqaDq3q4K1Hm7-Z0b6r_neN9iMevAGpubtiTARAVEE-mLkgQyvSUKS5Tlkl8Ykocq8aNvP_90w/p.png?)
+![field config](./userdata/images/scd2-on-pdi-dlu-2.png)
+
+O resultado é uma tabela versionado da seguinte maneira : 
+
+![field config](./userdata/images/scd2-on-final-table-view.png)
 
 O exemplo desse artigo pode ser encontrado aqui : 
 
