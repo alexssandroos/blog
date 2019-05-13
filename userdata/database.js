@@ -211,6 +211,15 @@ window.VUELOG_DATABASE = {
       slug: 'enable-cors',
       category: 'pentaho',
       date: '2019-03-16'
+    } ,
+    {
+      title: {
+        'en-US': 'Create a Vuejs App with Sparkl backend',
+        'pt-BR': 'Criando uma app Vuejs integrado ao Sparkl'
+      },
+      slug: 'vue-and-sparkl',
+      category: 'pentaho',
+      date: '2019-05-13'
     } 
 
   ]
