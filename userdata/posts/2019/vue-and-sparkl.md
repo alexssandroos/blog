@@ -5,9 +5,11 @@ date: 2019-05-13
 
 ## Vuejs e Sparkl, CRUD user
 
-O proposíto desse blog post é mostrar o passo a passo para subir o projeto de CRUD com Application Builder (Aka Sparkl) integrado ao Vuejs. 
+O proposíto desse blog post é mostrar o passo a passo para subir o projeto de CRUD com Application Builder (Aka Sparkl) integrado ao Vuejs. Os slides apresentados no lab podem ser encontrados [aqui](
+https://docs.google.com/presentation/d/1BZ2OO0Pf7iOrJk3JN0vS0XdbtZfs8rzCBobZgfyhVyQ/edit?usp=sharing) .
 
 > Recomendo olhar com carinho os links ;) 
+
 > O projeto pode ser encontrado [aqui](https://github.com/alexssandroos/pentahoday2019)
 
 A pasta `app` basicamente é um plugin Sparkl que carrega um [arquivo json](https://github.com/alexssandroos/pentahoday2019/blob/master/app/resources/config/config.json) como enviroment e usa de um [endpoint](https://github.com/alexssandroos/pentahoday2019/blob/master/app/endpoints/kettle/user.ktr) como inteface de backend para a aplicação. A pasta [front](https://github.com/alexssandroos/pentahoday2019/tree/master/app/front) contém a app [Vuejs](https://vuejs.org) feita com o [webpack-simple](https://github.com/vuejs-templates/webpack-simple) template, usa o [axios](https://github.com/axios/axios) como http client e o [vuetify](https://vuetifyjs.com/en/) como a biblioteca de componentes Vue mais linda do universo :) .
@@ -41,3 +43,5 @@ Esse plugin foi testado na versão 8.2 do pentaho-server e usa postgres como ban
 
 ![app vue 03](./userdata/images/appvue_03.png)
 
+
+Quaisquer dúvidas e sugestões são bem vindas, assim como issues e pull requests ;)
