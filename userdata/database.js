@@ -220,7 +220,15 @@ window.VUELOG_DATABASE = {
       slug: 'vue-and-sparkl',
       category: 'pentaho',
       date: '2019-05-13'
+    } , 
+    {
+      title: {
+        'en-US': 'Business indicators panel with Template Components',
+        'pt-BR': 'Criando cards de Indicadores com Template Component'
+      },
+      slug: 'template-component-mustache',
+      category: 'pentaho',
+      date: '2019-09-06'
     } 
-
   ]
 }
