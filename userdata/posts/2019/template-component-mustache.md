@@ -16,6 +16,8 @@ Quando os componentes já definidos no cde não atendem uma das alternativas é 
 <div id="table"></div> 
 ```
 
+![img](./userdata/images/template-component-mustache01.png)
+
 2. css:
 
 ```css
@@ -93,9 +95,10 @@ text-decoration: none;
 } 
 ```
 
-Camada de Datasources
+### Camada de Datasources
 Por questões didáticas estou usando uma consulta mdx ao cubo Quadrant Analysis
 
+```sql
 MDX
 WITH
 SET [~ROWS] AS
@@ -104,39 +107,46 @@ SELECT
 NON EMPTY {[Measures].[Actual], [Measures].[Budget], [Measures].[Variance]} ON COLUMNS,
 NON EMPTY [~ROWS] ON ROWS
 FROM [Quadrant Analysis]
+```
 
-[foto_consulta_mdx]
+![img](./userdata/images/template-component-mustache02.png)
+
 
 Pra complementar vou criar duas colunas calculadas que servirão para tornar a mágica da exibição dinâmica que preciso mais simples.
 
+```sql
 =IF(INT(["Variance"])>0;"up";"down")
 
 =IF(INT(["Variance"])>0;"green";"red")
+```
 
-[foto_colunas_calculadas]
+![layout](./userdata/images/template-component-mustache03.png)
+
 
 O resultado deve ser algo assim: 
-[foto_tabela]
+
+![img](./userdata/images/template-component-mustache04.png)
 
 
-Camada de components
-Na categoria Standard selecione o Template componente.
+### Camada de components
+
+1. Na categoria Standard selecione o Template componente.
 Ajustes : 
 
 Datasource: 	NOMEDODATASOURCE
-HtmlObject:	
-template
+HtmlObject:	 template
 Template Library:	Mustache
 
-Adicione um formatador para os números : 
-formater
-numeric: 
+2. Adicione um formatador para os números : 
+```javascript
 function(v) { 
 return v.toLocaleString('pt-BR'); 
 }
+```
 
-Adicione a função que vai renderizar o componente
+3. Adicione a função que vai renderizar o componente
 
+```javascript
 function() {
 var template = `
 {{#items}} 
@@ -157,18 +167,21 @@ var template = `
 `
 return template;
 } 
+```
 
 Como resultado deves ter um painel de indicadores tal qual: 
-[foto_indicador]
+
+![img](./userdata/images/template-component-mustache05.png)
 
 
-Os fontes podem ser encontrados aqui.
+Os fontes podem ser encontrados [aqui]().
 
-Um dica é olhar na samples do pentaho-server os exemplos implementados para tirar algumas duvidas de implementações.
+> Um dica é olhar na samples do pentaho-server os exemplos implementados para tirar algumas duvidas de implementações.
 
 
 
-Referências:
+#### Referências:
+
 https://mustache.github.io/mustache.5.html
 http://mfgaspar.github.io/2017/Template-Component-Part-1/
 http://mfgaspar.github.io/2017/Template-Component-Part-2/
@@ -177,45 +190,3 @@ http://mfgaspar.github.io/2017/Template-Component-Part-4/
 http://mfgaspar.github.io/2017/Template-Component-Part-5/
 https://github.com/PacktPublishing/Learning-Pentaho-CTools/tree/master/Chapter6/Template%2BComponent
 
-
-
-O proposíto desse blog post é mostrar o passo a passo para subir o projeto de CRUD com Application Builder (Aka Sparkl) integrado ao Vuejs. Os slides apresentados no lab podem ser encontrados [aqui](
-https://docs.google.com/presentation/d/1BZ2OO0Pf7iOrJk3JN0vS0XdbtZfs8rzCBobZgfyhVyQ/edit?usp=sharing) .
-
-> Recomendo olhar com carinho os links ;) 
-
-> O projeto pode ser encontrado [aqui](https://github.com/alexssandroos/pentahoday2019)
-
-A pasta `app` basicamente é um plugin Sparkl que carrega um [arquivo json](https://github.com/alexssandroos/pentahoday2019/blob/master/app/resources/config/config.json) como enviroment e usa de um [endpoint](https://github.com/alexssandroos/pentahoday2019/blob/master/app/endpoints/kettle/user.ktr) como inteface de backend para a aplicação. A pasta [front](https://github.com/alexssandroos/pentahoday2019/tree/master/app/front) contém a app [Vuejs](https://vuejs.org) feita com o [webpack-simple](https://github.com/vuejs-templates/webpack-simple) template, usa o [axios](https://github.com/axios/axios) como http client e o [vuetify](https://vuetifyjs.com/en/) como a biblioteca de componentes Vue mais linda do universo :) .
-
-KTR que seta as variaveis de ambiente : 
-
-![app enviroment](./userdata/images/appvue_enviroment.png)
-
-KTR que serve de backend para o CRUD: 
-
-![app user ](./userdata/images/appvue_user_ktr.png)
-
-### E como faze-lo funcionar ? 
-
-Esse plugin foi testado na versão 8.2 do pentaho-server e usa postgres como banco de dados. O passo a passo de uso é basicamente.
-
-- baixar o projeto e copiar a pasta app para dentro da pasta do pentaho `pentaho-solutions/system` 
-- rodar o script [build.sql](https://github.com/alexssandroos/pentahoday2019/blob/master/app/resources/config/build.sql)
-
-![app build](./userdata/images/appvue_build.png)
-
-- editar o [config.json](https://github.com/alexssandroos/pentahoday2019/blob/master/app/resources/config/config.json) com as credenciais de conexão do banco.
-
-![app config](./userdata/images/appvue_config.png)
-
-- Iniciar o server e após o login acessa-lo no menu superior `Tools`.
-
-![app vue 01](./userdata/images/appvue_01.png)
-
-![app vue 02](./userdata/images/appvue_02.png)
-
-![app vue 03](./userdata/images/appvue_03.png)
-
-
-Quaisquer dúvidas e sugestões são bem vindas, assim como issues e pull requests ;)
