@@ -32,7 +32,7 @@ DBT permite que você defina módulos reutilizáveis, também conhecidos como mo
 
 ```sql
 -- Modelo de Cliente
---{% macro customer_model() %}
+{ % macro customer_model() % }
 SELECT
   customer_id,
   SUM(order_total) as total_order_amount
@@ -40,7 +40,7 @@ FROM
   {{ ref('orders') }}
 GROUP BY
   customer_id
-{% endmacro %}
+{ % endmacro % }
 ```
 
 ### Documentação Automática
