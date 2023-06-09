@@ -20,7 +20,7 @@ window.VUELOG_DATABASE = {
 
     // The path to route to when you visit `/`.
     // Set to `/home`, `/blog` or a valid path at your need.
-    homePath: '/home',
+    homePath: '/blog',
 
     // Whether footer is visible on `homePath` or not.
     homeFooter: false,
@@ -63,7 +63,7 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Artigos'
       },
       type: 'category',
-      path: '/home'
+      path: '/blog'
     },
     {
       label: {
