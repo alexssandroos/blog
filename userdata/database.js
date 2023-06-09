@@ -63,7 +63,7 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Artigos'
       },
       type: 'category',
-      path: '/blog/pentaho'
+      path: '/articles'
     },
     {
       label: {
@@ -245,6 +245,16 @@ window.VUELOG_DATABASE = {
       slug: 'dbt-overview',
       category: 'dbt',
       date: '2023-06-09'
+    } ,
+    {
+      title: {
+        'en-US': 'DBT Core cheatsheet',
+        'pt-BR': 'DBT Core cheatsheet'
+      },
+      slug: 'dbt-core-cheatsheet',
+      category: 'dbt',
+      date: '2023-06-09'
     } 
+
   ]
 }
