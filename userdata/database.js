@@ -126,6 +126,13 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Trilha Pentaho Init'
       },
       slug: 'trilha-pentaho-init'
+    },
+    {
+      title: {
+        'en-US': 'DBT (Data build tools)',
+        'pt-BR': 'DBT (Data build tools)'
+      },
+      slug: 'dbt'
     }
 
   ],
@@ -229,6 +236,15 @@ window.VUELOG_DATABASE = {
       slug: 'template-component-mustache',
       category: 'pentaho',
       date: '2019-09-06'
+    } ,
+    {
+      title: {
+        'en-US': 'DBT overview to data engineer',
+        'pt-BR': 'Visão Geral sobre DBT para engenharia de dados'
+      },
+      slug: 'dbt-overview',
+      category: 'dbt',
+      date: '2023-06-09'
     } 
   ]
 }
