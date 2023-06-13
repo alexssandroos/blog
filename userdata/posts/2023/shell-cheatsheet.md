@@ -16,3 +16,11 @@ ssh-copy-id user@hostname
 ssh-copy-id -i path/para/chave.pub user@hostname
 ```
 
+### Verificar portas e serviços em uso para debbug
+
+```shell
+#ipv4
+lsof -Pnl +M -i4 
+#ipv6
+lsof -Pnl +M -i6
+```
