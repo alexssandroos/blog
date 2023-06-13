@@ -254,6 +254,15 @@ window.VUELOG_DATABASE = {
       slug: 'dbt-core-cheatsheet',
       category: 'dbt',
       date: '2023-06-09'
+    } ,
+    {
+      title: {
+        'en-US': 'Shell Cheatsheet',
+        'pt-BR': 'Shell Cheatsheet'
+      },
+      slug: 'shell-chetsheet',
+      category: 'linux',
+      date: '2023-06-13'
     } 
 
   ]
