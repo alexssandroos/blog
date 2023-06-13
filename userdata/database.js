@@ -260,7 +260,7 @@ window.VUELOG_DATABASE = {
         'en-US': 'Shell Cheatsheet',
         'pt-BR': 'Shell Cheatsheet'
       },
-      slug: 'shell-chetsheet',
+      slug: 'shell-cheatsheet',
       category: 'linux',
       date: '2023-06-13'
     } 
