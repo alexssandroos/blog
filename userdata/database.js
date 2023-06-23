@@ -133,6 +133,13 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'DBT (Data build tools)'
       },
       slug: 'dbt'
+    },
+    {
+      title: {
+        'en-US': 'Python',
+        'pt-BR': 'Python'
+      },
+      slug: 'python'
     }
 
   ],
@@ -263,6 +270,15 @@ window.VUELOG_DATABASE = {
       slug: 'shell-cheatsheet',
       category: 'linux',
       date: '2023-06-13'
+    } ,
+    {
+      title: {
+        'en-US': 'Python Tricks',
+        'pt-BR': 'Python Tricks'
+      },
+      slug: 'python-tricks',
+      category: 'python',
+      date: '2023-06-23'
     } 
 
   ]
