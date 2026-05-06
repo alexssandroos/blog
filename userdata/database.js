@@ -4,8 +4,8 @@ window.VUELOG_DATABASE = {
   config: {
     // The name of your site, will be displayed in browser tab and site header.
     brand: {
-      'en-US': 'O Entusiasta',
-      'pt-BR': 'O Entusiasta'
+      'en-US': 'Alex Santos',
+      'pt-BR': 'Alex Santos'
     },
 
     // Put the site brand behind current page in `document.title`.
