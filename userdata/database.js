@@ -110,6 +110,13 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Quem sou eu'
               },
       slug: 'about'
+    },
+    {
+      title: {
+        'en-US': 'Portifolio',
+        'pt-BR': 'Portifólio'
+              },
+      slug: 'portifolio'
     }
   ],
 
