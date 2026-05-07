@@ -63,7 +63,7 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Portifolio'
       },
       type: 'page',
-      path: '/page/portifolio'
+      path: '/portifolio'
     },
     {
       label: {
