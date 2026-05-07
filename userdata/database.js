@@ -5,7 +5,7 @@ window.VUELOG_DATABASE = {
     // The name of your site, will be displayed in browser tab and site header.
     brand: {
       'en-US': 'Alex Santos',
-      'pt-BR': 'Alex Santos'
+      'pt-BR': 'Alex Santos' 
     },
 
     // Put the site brand behind current page in `document.title`.
@@ -55,7 +55,7 @@ window.VUELOG_DATABASE = {
         'pt-BR': 'Sobre'
       },
       type: 'page',
-      path: '/page/about'
+      path: '/about'
     },
     {
       label: {
