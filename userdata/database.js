@@ -59,14 +59,6 @@ window.VUELOG_DATABASE = {
     },
     {
       label: {
-        'en-US': 'Portifolio',
-        'pt-BR': 'Portifolio'
-      },
-      type: 'page',
-      path: '/page/portifolio'
-    },
-    {
-      label: {
         'en-US': 'Articles',
         'pt-BR': 'Artigos'
       },
@@ -111,13 +103,6 @@ window.VUELOG_DATABASE = {
               },
       slug: 'about'
     },
-    {
-      title: {
-        'en-US': 'Portifolio',
-        'pt-BR': 'Portifólio'
-              },
-      slug: 'portifolio'
-    }
   ],
 
   categories: [
